@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>samchi_sample_page</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+  <!-- 헤더 -->
+  <header>
+    <h1>WEB PAGE</h1>
+  </header>
+  
+  ID <input = user_id>
+  PW <input = user_pw>
+  <button>로그인</button>
+
+  <!-- 본문 섹션 1 -->
+  <section id="section1">
+    <h2>소개글</h2>
+    <p>HTML과 CSS를 사용하여 만들어봤습니다..이미지 넣기도 도전..!</p>
+    <img src="{{ url_for('static', filename='image.png') }}" alt="cute" width="400">
+  </section>
+
+  <!-- 본문 섹션 2 -->
+  <section id="section2">
+    <h2>흠 어떤걸 넣을지 고민중..</h2>
+    <p>다양한 요소를 추가할 수 있습니다.</p>
+  </section>
+
+  <!-- 본문 섹션 3 -->
+  <section id="section3">
+    <h2>웹페이지 공사중</h2>
+    <p>html 마구 테스트 해보기 중입니다.</p>
+  </section>
+</body>
+</html>
